@@ -8,7 +8,7 @@ __pycache__/
 
 # avoid pretrained word-embedding
 *.bin
-*.bin
+*.vec
 
 # Distribution / packaging
 .Python

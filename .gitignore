@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# avoid pretrained word-embedding
+*.bin
+*.bin
+
 # Distribution / packaging
 .Python
 build/

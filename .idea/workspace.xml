@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ee2df45-f01c-40ce-b8da-2937fddeeff0" name="Default Changelist" comment="" />
+    <list default="true" id="9ee2df45-f01c-40ce-b8da-2937fddeeff0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +43,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Pipfile" value="2" />
+          <entry key="gitignore" value="1" />
           <entry key="lock" value="1" />
           <entry key="py" value="33" />
           <entry key="txt" value="3" />
@@ -47,7 +51,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="33" />
         </counts>
       </usages-collector>
@@ -55,12 +59,13 @@
         <counts>
           <entry key="Pipfile" value="9" />
           <entry key="dummy" value="24" />
+          <entry key="gitignore" value="67" />
           <entry key="py" value="3348" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="PLAIN_TEXT" value="100" />
           <entry key="Python" value="3348" />
         </counts>
       </usages-collector>
@@ -127,18 +132,27 @@
             <state relative-caret-position="-180">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
-                <marker date="1564967905540" expanded="true" signature="81:87" ph="..." />
-                <marker date="1564967905540" expanded="true" signature="81:320" ph="..." />
-                <marker date="1564967905540" expanded="true" signature="319:320" ph="..." />
-                <marker date="1564967905540" expanded="true" signature="439:573" ph="..." />
+                <marker date="1565057287997" expanded="true" signature="81:87" ph="..." />
+                <marker date="1565057287997" expanded="true" signature="81:320" ph="..." />
+                <marker date="1565057287997" expanded="true" signature="319:320" ph="..." />
+                <marker date="1565057287997" expanded="true" signature="439:573" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/byzantine/model/features_eng.py">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -169,6 +183,7 @@
         <option value="$PROJECT_DIR$/byzantine/helperfunction/data_split.py" />
         <option value="$PROJECT_DIR$/byzantine/model/Ner.py" />
         <option value="$PROJECT_DIR$/byzantine/helperfunction/embedding.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -195,23 +210,6 @@
             <path>
               <item name="btd" type="b2602c69:ProjectViewProjectNode" />
               <item name="btd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btd" type="462c0819:PsiDirectoryNode" />
-              <item name="byzantine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btd" type="462c0819:PsiDirectoryNode" />
-              <item name="byzantine" type="462c0819:PsiDirectoryNode" />
-              <item name="helperfunction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btd" type="462c0819:PsiDirectoryNode" />
-              <item name="byzantine" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="btd" type="b2602c69:ProjectViewProjectNode" />
@@ -277,6 +275,9 @@
       <module name="btd" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/byzantine/model" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -563,10 +564,10 @@
         <state relative-caret-position="-180">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <marker date="1564967905540" expanded="true" signature="81:87" ph="..." />
-            <marker date="1564967905540" expanded="true" signature="81:320" ph="..." />
-            <marker date="1564967905540" expanded="true" signature="319:320" ph="..." />
-            <marker date="1564967905540" expanded="true" signature="439:573" ph="..." />
+            <marker date="1565057287997" expanded="true" signature="81:87" ph="..." />
+            <marker date="1565057287997" expanded="true" signature="81:320" ph="..." />
+            <marker date="1565057287997" expanded="true" signature="319:320" ph="..." />
+            <marker date="1565057287997" expanded="true" signature="439:573" ph="..." />
           </folding>
         </state>
       </provider>
@@ -607,6 +608,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/byzantine/model/features_eng.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

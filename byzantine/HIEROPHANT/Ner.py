@@ -72,7 +72,7 @@ class BilstmNer:
             for batch in range(batch_num):
                 x_batch, y_batch = data_batches.next_batch(batch_size)
                 feed_dict = {'input_data': x_batch, 'labels': y_batch}
-                pre, train_op = sess.run(self.viterbi_sequence, self.train_op, feed_dict=feed_dict)
+                pre, train_op = sess.run([self.viterbi_sequence, self.train_op], feed_dict=feed_dict)
                 # print('prediction: ', pre, '\n')
                 # print('loss ', train_op, '\n')
                 for i in range(len(y_batch)):
@@ -100,7 +100,7 @@ class BilstmNer:
             for batch in range(batch_num):
                 x_batch, y_batch = data_batches.next_batch(batch_size)
                 feed_dict = {'input_data': x_batch, 'labels': y_batch}
-                pre, _ = sess.run(self.viterbi_sequence, self.train_op, feed_dict=feed_dict)
+                pre, _ = sess.run([self.viterbi_sequence], feed_dict=feed_dict)
                 for i in range(len(y_batch)):
                     for j in range(len(y_batch[0])):
                         instance_num = instance_num + 1
@@ -117,8 +117,6 @@ class BilstmNer:
     def fine_tuning(self):
 
         return
-
-
 
     def save_to_local(self):
 

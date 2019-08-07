@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ee2df45-f01c-40ce-b8da-2937fddeeff0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/byzantine/HIEROPHANT/teee.py" beforeDir="false" afterPath="$PROJECT_DIR$/byzantine/HIEROPHANT/teee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py" beforeDir="false" afterPath="$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,19 +34,21 @@
     <session id="-329556225">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Pipfile" value="2" />
           <entry key="gitignore" value="1" />
+          <entry key="ipynb" value="1" />
           <entry key="lock" value="1" />
           <entry key="py" value="60" />
           <entry key="txt" value="4" />
@@ -53,6 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="IPNB" value="1" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Python" value="60" />
         </counts>
@@ -62,23 +66,23 @@
           <entry key="Pipfile" value="9" />
           <entry key="dummy" value="24" />
           <entry key="gitignore" value="70" />
-          <entry key="py" value="5065" />
+          <entry key="py" value="5068" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="103" />
-          <entry key="Python" value="5065" />
+          <entry key="Python" value="5068" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
+            <state relative-caret-position="495">
               <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
@@ -89,17 +93,13 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/byzantine/helperfunction/data_split.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/byzantine/data/input_data/words.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-35">
+            <state relative-caret-position="45">
               <caret line="869" column="46" selection-start-line="869" selection-start-column="46" selection-end-line="869" selection-end-column="46" />
             </state>
           </provider>
@@ -109,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/byzantine/helperfunction/embedding.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="670">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
                 <marker date="1565145356230" expanded="true" signature="102:107" ph="..." />
                 <marker date="1565145356230" expanded="true" signature="102:509" ph="..." />
@@ -119,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/teee.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+            <state relative-caret-position="270">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -134,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.virtualenvs/btd-fmD8u9Bw/Lib/site-packages/gensim/models/fasttext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="1186" lean-forward="true" selection-start-line="1186" selection-end-line="1186" />
+            <state relative-caret-position="52650">
+              <caret line="1186" selection-start-line="1186" selection-end-line="1186" />
             </state>
           </provider>
         </entry>
@@ -171,9 +171,9 @@
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py" />
         <option value="$PROJECT_DIR$/byzantine/helperfunction/__init__.py" />
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/__init__.py" />
-        <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py" />
         <option value="$PROJECT_DIR$/byzantine/helperfunction/embedding.py" />
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/teee.py" />
+        <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py" />
       </list>
     </option>
   </component>
@@ -205,12 +205,6 @@
               <item name="btd" type="b2602c69:ProjectViewProjectNode" />
               <item name="btd" type="462c0819:PsiDirectoryNode" />
               <item name="byzantine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btd" type="462c0819:PsiDirectoryNode" />
-              <item name="byzantine" type="462c0819:PsiDirectoryNode" />
-              <item name="HIEROPHANT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="btd" type="b2602c69:ProjectViewProjectNode" />
@@ -274,6 +268,9 @@
       <module name="btd" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/byzantine/helperfunction" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -293,6 +290,9 @@
       <module name="btd" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/byzantine/HIEROPHANT" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -334,6 +334,9 @@
       <module name="btd" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/byzantine/HIEROPHANT" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -412,8 +415,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27184987" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2756032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -538,23 +542,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/model/Ner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4275">
-          <caret line="97" column="19" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/model/teee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/byzantine/model/Ner.py" />
+    <entry file="file://$PROJECT_DIR$/byzantine/model/teee.py" />
     <entry file="file://$PROJECT_DIR$/byzantine/data/input_data/label.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -565,9 +554,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/model/features_eng.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/byzantine/model/features_eng.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -650,34 +637,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/helperfunction/data_split.py">
-      <provider selected="true" editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/byzantine/Alpha.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <caret lean-forward="true" />
+          <selected id="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/data/input_data/words.txt">
+    <entry file="file://$USER_HOME$/.virtualenvs/btd-fmD8u9Bw/Lib/site-packages/gensim/models/fasttext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35">
-          <caret line="869" column="46" selection-start-line="869" selection-start-column="46" selection-end-line="869" selection-end-column="46" />
+        <state relative-caret-position="52650">
+          <caret line="1186" selection-start-line="1186" selection-end-line="1186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/teee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/byzantine/helperfunction/embedding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
           <folding>
             <marker date="1565145356230" expanded="true" signature="102:107" ph="..." />
             <marker date="1565145356230" expanded="true" signature="102:509" ph="..." />
@@ -686,19 +673,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/btd-fmD8u9Bw/Lib/site-packages/gensim/models/fasttext.py">
+    <entry file="file://$PROJECT_DIR$/byzantine/data/input_data/words.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="1186" lean-forward="true" selection-start-line="1186" selection-end-line="1186" />
+        <state relative-caret-position="45">
+          <caret line="869" column="46" selection-start-line="869" selection-start-column="46" selection-end-line="869" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/teee.py">
+    <entry file="file://$PROJECT_DIR$/byzantine/helperfunction/data_split.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="5" column="49" lean-forward="true" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        <state relative-caret-position="495">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>

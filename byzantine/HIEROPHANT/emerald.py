@@ -8,7 +8,7 @@ if __name__ == '__main__':
     warnings.filterwarnings("ignore")
     config = dict()
     config['switch'] = 'FastText'
-    config['addr'] = '../models/embedding/crawl-300d-2M-subword.bin'
+    config['addr'] = '../models/embedding/crawl-300d-2M-subword.vec'
     config['train_addr'] = '../data/input_data/'
     metadata = NotoriousBig(embedding_switch=config['switch'], embedding_addr=config['addr'],
                             training_data_address=config['train_addr'])

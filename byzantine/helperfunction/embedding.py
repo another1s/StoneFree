@@ -23,7 +23,7 @@ class NotoriousBig:
         words_address = data_address + 'words.txt'
         labels_address = data_address + 'labels.txt'
         tag_address = data_address + 'pos_tag.txt'
-        with open(words_address, 'r', encoding='utf-8') as f:
+        with open(words_address, 'r', encoding='GBK') as f:
             words = f.readlines()
             f.close()
         with open(labels_address, 'r', encoding='utf-8') as f:

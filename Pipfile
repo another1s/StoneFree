@@ -9,6 +9,7 @@ gensim = "*"
 
 [packages]
 tensorflow = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.6"

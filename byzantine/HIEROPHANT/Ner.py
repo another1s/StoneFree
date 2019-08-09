@@ -25,10 +25,10 @@ class BilstmNer:
 
         self.embedding_pretrained = embedding_pretrained
         self.dropout_keep = dropout_keep
-        self.input_data = tf.placeholder(tf.int32, shape=[self.batch_size, self.sentence_len], name="input_data")
-        self.labels = tf.placeholder(tf.int32, shape=[self.batch_size, self.sentence_len], name="labels")
-        self.embedding_placeholder = tf.placeholder(tf.float32, shape=[self.embedding_size, self.embedding_dim],
-                                                    name="embedding_placeholder")
+        self.input_data = tf.compat.v1.placeholder(tf.int32, shape=[self.batch_size, self.sentence_len], name="input_data")
+        self.labels = tf.compat.v1.placeholder(tf.int32, shape=[self.batch_size, self.sentence_len], name="labels")
+        self.embedding_placeholder = tf.compat.v1.placeholder(tf.float32, shape=[self.embedding_size, self.embedding_dim],
+                                                              name="embedding_placeholder")
         with tf.variable_scope("bilstm_crf") as scope:
             self.build_graph()
 
@@ -38,7 +38,7 @@ class BilstmNer:
             embeddings_init = word_embeddings.assign(self.embedding_pretrained)
 
         input_embedded = tf.nn.embedding_lookup(word_embeddings, self.input_data)
-        input_embedded = tf.nn.dropout(input_embedded, self.dropout_keep)
+        input_embedded = tf.nn.dropout(input_embedded, rate=1 - self.dropout_keep)
 
         lstm_fw_cell = tf.keras.layers.LSTMCell(self.embedding_dim, unit_forget_bias=True, dropout=0.3)
         lstm_bw_cell = tf.keras.layers.LSTMCell(self.embedding_dim, unit_forget_bias=True, dropout=0.3)

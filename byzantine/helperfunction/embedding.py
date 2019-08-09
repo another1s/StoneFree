@@ -21,7 +21,7 @@ class NotoriousBig:
     @staticmethod
     def read_data(data_address):
         words_address = data_address + 'words.txt'
-        labels_address = data_address + 'labels.txt'
+        labels_address = data_address + 'label.txt'
         tag_address = data_address + 'pos_tag.txt'
         with open(words_address, 'r', encoding='GBK') as f:
             words = f.readlines()

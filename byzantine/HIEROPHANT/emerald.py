@@ -10,9 +10,9 @@ if __name__ == '__main__':
     config['switch'] = 'FastText'
     config['addr'] = '../models/embedding/crawl-300d-2M-subword.bin'
     config['train_addr'] = '../data/input_data/'
-    metadata = NotoriousBig(embedding_switch=config['switch'], embedding_addr=config['addr'],
-                             training_data_address=config['train_addr'])
-    data_train = BatchGenerator(X=metadata.data, y=metadata.labels, shuffle=True)
+    # metadata = NotoriousBig(embedding_switch=config['switch'], embedding_addr=config['addr'],
+    #                          training_data_address=config['train_addr'])
+    # data_train = BatchGenerator(X=metadata.data, y=metadata.labels, shuffle=True)
 
     splash = {
         'learning_rate': 0.001,

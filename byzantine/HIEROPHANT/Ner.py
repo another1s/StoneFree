@@ -33,21 +33,22 @@ class BilstmNer:
             self.build_graph()
 
     def build_graph(self):
-        word_embeddings = tf.get_variable("word_embeddings", [self.embedding_size, self.embedding_dim])
+        word_embeddings = tf.compat.v1.get_variable("word_embeddings", [self.embedding_size, self.embedding_dim])
         if self.embedding_pretrained:
             embeddings_init = word_embeddings.assign(self.embedding_pretrained)
 
         input_embedded = tf.nn.embedding_lookup(word_embeddings, self.input_data)
         input_embedded = tf.nn.dropout(input_embedded, rate=1 - self.dropout_keep)
 
-        lstm_fw_cell = tf.keras.layers.LSTMCell(self.embedding_dim, unit_forget_bias=True, dropout=0.3)
-        lstm_bw_cell = tf.keras.layers.LSTMCell(self.embedding_dim, unit_forget_bias=True, dropout=0.3)
-        bilstm_out = tf.keras.layers.Bidirectional(lstm_fw_cell, merge_mode='concat', backward_layer=lstm_bw_cell,
-                                                   input_shape=input_embedded)
+        lstm_fw_cell = tf.nn.rnn_cell.LSTMCell(self.embedding_dim, forget_bias=1.0, state_is_tuple=True)
+        lstm_bw_cell = tf.nn.rnn_cell.LSTMCell(self.embedding_dim, forget_bias=1.0, state_is_tuple=True)
+        (output_fw, output_bw), states = tf.compat.v1.nn.bidirectional_dynamic_rnn(lstm_fw_cell, lstm_bw_cell, input_embedded, dtype=tf.float32,
+                                                                        time_major=False, scope=None)
+        bilstm_out = tf.concat([output_fw, output_bw], axis=2)
         # Fully connected layer.
-        self.Weights = tf.get_variable(name="W", shape=[self.batch_size, 2 * self.embedding_dim, self.tag_size], dtype=tf.float32)
+        self.Weights = tf.compat.v1.get_variable(name="W", shape=[self.batch_size, 2 * self.embedding_dim, self.tag_size], dtype=tf.float32)
 
-        self.bias = tf.get_variable(name="b", shape=[self.batch_size, self.sentence_len, self.tag_size], dtype=tf.float32, initializer=tf.zeros_initializer())
+        self.bias = tf.compat.v1.get_variable(name="b", shape=[self.batch_size, self.sentence_len, self.tag_size], dtype=tf.float32, initializer=tf.zeros_initializer())
 
         bilstm_out = tf.tanh(tf.matmul(bilstm_out, self.Weights) + self.bias)
 

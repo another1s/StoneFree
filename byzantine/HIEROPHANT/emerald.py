@@ -1,7 +1,8 @@
 from byzantine.HIEROPHANT.Ner import BilstmNer
 from byzantine.helperfunction.embedding import NotoriousBig
-from byzantine.helperfunction.data_split import BatchGenerator
+
 import warnings
+import tensorflow as tf
 
 
 if __name__ == '__main__':
@@ -12,7 +13,10 @@ if __name__ == '__main__':
     config['train_addr'] = '../data/input_data/'
     metadata = NotoriousBig(embedding_switch=config['switch'], embedding_addr=config['addr'],
                               training_data_address=config['train_addr'])
-    data_train = BatchGenerator(X=metadata.data, y=metadata.labels, shuffle=True)
+    # data_train = BatchGenerator(X=metadata.data, y=metadata.labels, shuffle=True)
+    for sentence in metadata.data:
+        metadata.check_words(words=sentence)
+    metadata.add_new_word(new_words=metadata.newly_imported, model=metadata.word_embedding)
 
     splash = {
         'learning_rate': 0.001,
@@ -24,7 +28,11 @@ if __name__ == '__main__':
         'tag_size': 4
     }
 
-    Bilstm_Crf = BilstmNer(config=splash, embedding_pretrained='')
+    Bilstm_Crf = BilstmNer(config=splash, embedding_pretrained=metadata.word_embedding)
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
+        saver = tf.train.Saver()
+        Bilstm_Crf.train(sess=sess, training_data=metadata.data, training_labels=metadata.labels, epoches=20, batch_size=10)
     print('done')
 
 

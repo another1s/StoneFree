@@ -70,7 +70,7 @@ class BilstmNer:
         self.viterbi_sequence, viterbi_score = tf.contrib.crf.crf_decode(bilstm_out, self.transition_params, tf.tile(np.array([self.sentence_len]), np.array([self.batch_size])))
 
         # Training ops.
-        optimizer = tf.train.AdamOptimizer(self.lr)
+        optimizer = tf.compat.v1.train.AdamOptimizer(self.lr)
         self.train_op = optimizer.minimize(loss)
 
     def train(self, sess, training_data: 'list', training_labels: 'list', epoches: 'int', batch_size: 'int'):

@@ -9,10 +9,10 @@ if __name__ == '__main__':
     warnings.filterwarnings("ignore")
     config = dict()
     config['switch'] = 'FastText'
-    config['addr'] = '../models/embedding/crawl-300d-2M-subword.bin'
+    config['addr'] = '../models/embedding/crime-and-punishment.bin'
     config['train_addr'] = '../data/input_data/'
     metadata = NotoriousBig(embedding_switch=config['switch'], embedding_addr=config['addr'],
-                              training_data_address=config['train_addr'])
+                            training_data_address=config['train_addr'])
     # data_train = BatchGenerator(X=metadata.data, y=metadata.labels, shuffle=True)
     for sentence in metadata.data:
         metadata.check_words(words=sentence)
@@ -32,7 +32,9 @@ if __name__ == '__main__':
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
         saver = tf.train.Saver()
-        Bilstm_Crf.train(sess=sess, training_data=metadata.data, training_labels=metadata.labels, epoches=20, batch_size=10)
+        data = Bilstm_Crf.fasttext_embedding_conversion(mode='fasttext', data=metadata.data)
+        Bilstm_Crf.train(sess=sess, training_data=data, training_labels=metadata.labels, epoches=20, batch_size=10)
+    sess.close()
     print('done')
 
 

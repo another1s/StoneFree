@@ -29,13 +29,23 @@ class BilstmNer:
         self.labels = tf.compat.v1.placeholder(tf.int32, shape=[self.batch_size, self.sentence_len], name="labels")
         self.embedding_placeholder = tf.compat.v1.placeholder(tf.float32, shape=[self.embedding_size, self.embedding_dim],
                                                               name="embedding_placeholder")
-        with tf.variable_scope("bilstm_crf") as scope:
+        with tf.compat.v1.variable_scope("bilstm_crf") as scope:
             self.build_graph()
+
+    def fasttext_embedding_conversion(self, mode, data):
+        converted_word = []
+        if mode == 'fasttext':
+            word_vectors = self.embedding_pretrained.wv.vectors_vocab
+            vocab = self.embedding_pretrained.wv.vocab
+            for sentence in data:
+                ind = []
+                for word in sentence:
+                    ind.append(vocab[word].index)
+                converted_word.append(ind)
+        return converted_word
 
     def build_graph(self):
         word_embeddings = tf.compat.v1.get_variable("word_embeddings", [self.embedding_size, self.embedding_dim])
-        if self.embedding_pretrained:
-            embeddings_init = word_embeddings.assign(self.embedding_pretrained)
 
         input_embedded = tf.nn.embedding_lookup(word_embeddings, self.input_data)
         input_embedded = tf.nn.dropout(input_embedded, rate=1 - self.dropout_keep)

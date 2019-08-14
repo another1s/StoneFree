@@ -6,7 +6,7 @@ default_embedding = ['word2vec', 'FastText']
 class NotoriousBig:
     def __init__(self, embedding_switch: 'str', embedding_addr: 'str', training_data_address: 'str'):
         self.word_embedding = self.read_embedding(embedding_switch, embedding_addr)
-        self.newly_imported = set()
+        self.newly_imported = list()
         self.data, self.labels, self.pos_tag = self.read_data(training_data_address)
         self.split_string()
 
@@ -69,9 +69,10 @@ class NotoriousBig:
     def check_words(self, words):
         word_vec = self.word_embedding.wv
         vocabulary = word_vec.vocab
+        bag = []
         for word in words:
-            if word not in vocabulary:
-                self.newly_imported.add(word)
+            bag.append(word)
+        self.newly_imported.append(bag)
 
     def add_new_word(self, new_words, model):
         model.build_vocab(new_words, update=True)

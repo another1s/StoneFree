@@ -75,14 +75,14 @@ class BilstmNer:
 
     def train(self, sess, training_data: 'list', training_labels: 'list', epoches: 'int', batch_size: 'int'):
         data_batches = BatchGenerator(training_data, training_labels)
-        batch_num = data_batches.y.shape[0] / batch_size
+        batch_num = int(data_batches.y.shape[0] / batch_size)
         acc_list = []
         for epoch in range(epoches):
             acc = 0
             instance_num = 0
             for batch in range(batch_num):
                 x_batch, y_batch = data_batches.next_batch(batch_size)
-                feed_dict = {'input_data': x_batch, 'labels': y_batch}
+                feed_dict = {self.input_data: x_batch, self.labels: y_batch}
                 pre, train_op = sess.run([self.viterbi_sequence, self.train_op], feed_dict=feed_dict)
                 # print('prediction: ', pre, '\n')
                 # print('loss ', train_op, '\n')
@@ -110,7 +110,7 @@ class BilstmNer:
             instance_num = 0
             for batch in range(batch_num):
                 x_batch, y_batch = data_batches.next_batch(batch_size)
-                feed_dict = {'input_data': x_batch, 'labels': y_batch}
+                feed_dict = {self.input_data: x_batch, self.labels: y_batch}
                 pre, _ = sess.run([self.viterbi_sequence], feed_dict=feed_dict)
                 for i in range(len(y_batch)):
                     for j in range(len(y_batch[0])):

@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     Bilstm_Crf = BilstmNer(config=splash, embedding_pretrained=metadata.word_embedding)
     data = Bilstm_Crf.fasttext_embedding_conversion(mode='fasttext', data=metadata.data)
-    with tf.compat.v1.Session as sess:
+    with tf.compat.v1.Session() as sess:
         sess.run(tf.compat.v1.global_variables_initializer())
         saver = tf.compat.v1.train.Saver()
         Bilstm_Crf.train(sess=sess, training_data=data, training_labels=metadata.labels, epoches=20, batch_size=10)

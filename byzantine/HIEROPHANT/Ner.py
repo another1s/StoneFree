@@ -4,7 +4,7 @@ from byzantine.helperfunction.data_split import BatchGenerator
 
 
 class BilstmNer:
-    def __init__(self, config, embedding_pretrained, dropout_keep=1):
+    def __init__(self, config, embedding_pretrained, void_index, dropout_keep=1):
         # the keys of config:
         # {
         #     lr: learning rate (float)
@@ -23,6 +23,7 @@ class BilstmNer:
         self.tag_size = config['tag_size']
         self.config = config
 
+        self.void_index = void_index
         self.embedding_pretrained = embedding_pretrained
         self.dropout_keep = dropout_keep
         self.input_data = tf.compat.v1.placeholder(tf.int32, shape=[self.batch_size, self.sentence_len], name="input_data")
@@ -43,6 +44,26 @@ class BilstmNer:
                     ind.append(vocab[word].index)
                 converted_word.append(ind)
         return converted_word
+
+    def data_padding(self, x):
+        x = np.array(x)
+        padding_num = self.sentence_len - x.shape[0]
+        if padding_num > 0:
+            dio_brando = np.ones(padding_num)*self.void_index
+            data_padded = np.concatenate((x, dio_brando))
+            return data_padded
+        else:
+            return x[0:self.sentence_len, ]
+
+    def label_padding(self, y):
+        y = np.array(y)
+        padding_num = self.sentence_len - y.shape[0]
+        if padding_num>0:
+            dio_brando = np.ones(padding_num)*3
+            label_padded = np.concatenate((y, dio_brando))
+            return label_padded
+        else:
+            return y[0:self.sentence_len, ]
 
     def build_graph(self):
         word_embeddings = tf.compat.v1.get_variable("word_embeddings", [self.embedding_size, self.embedding_dim])
@@ -82,6 +103,11 @@ class BilstmNer:
             instance_num = 0
             for batch in range(batch_num):
                 x_batch, y_batch = data_batches.next_batch(batch_size)
+
+                x_padded = list(map(self.data_padding, x_batch))
+                y_padded = list(map(self.label_padding, y_batch))
+                x_padded = np.array(x_padded)
+                y_padded = np.array(y_padded)
                 feed_dict = {self.input_data: x_batch, self.labels: y_batch}
                 pre, train_op = sess.run([self.viterbi_sequence, self.train_op], feed_dict=feed_dict)
                 # print('prediction: ', pre, '\n')

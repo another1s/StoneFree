@@ -14,10 +14,12 @@ if __name__ == '__main__':
     metadata = NotoriousBig(embedding_switch=config['switch'], embedding_addr=config['addr'],
                             training_data_address=config['train_addr'])
     # data_train = BatchGenerator(X=metadata.data, y=metadata.labels, shuffle=True)
+    pad_character = ['konodioda', 'kakyoin']
+    metadata.newly_imported.append(pad_character)
     for sentence in metadata.data:
         metadata.check_words(words=sentence)
     metadata.add_new_word(new_words=metadata.newly_imported, model=metadata.word_embedding)
-
+    v = metadata.word_embedding.wv.vocab['konodioda'].index
     splash = {
         'learning_rate': 0.001,
         'batch_size': 10,
@@ -28,7 +30,7 @@ if __name__ == '__main__':
         'tag_size': 4
     }
 
-    Bilstm_Crf = BilstmNer(config=splash, embedding_pretrained=metadata.word_embedding)
+    Bilstm_Crf = BilstmNer(config=splash, embedding_pretrained=metadata.word_embedding, void_index=v)
     data = Bilstm_Crf.fasttext_embedding_conversion(mode='fasttext', data=metadata.data)
     with tf.compat.v1.Session() as sess:
         sess.run(tf.compat.v1.global_variables_initializer())

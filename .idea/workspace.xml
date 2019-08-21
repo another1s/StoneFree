@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ee2df45-f01c-40ce-b8da-2937fddeeff0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py" beforeDir="false" afterPath="$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,14 +102,14 @@
           <entry key="Pipfile" value="5" />
           <entry key="csv" value="3" />
           <entry key="lock" value="2" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="py" value="52" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="Python" value="52" />
         </counts>
@@ -119,14 +118,14 @@
         <counts>
           <entry key="Pipfile" value="8" />
           <entry key="csv" value="10" />
-          <entry key="md" value="137" />
+          <entry key="md" value="646" />
           <entry key="py" value="4719" />
           <entry key="txt" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="137" />
+          <entry key="Markdown" value="646" />
           <entry key="PLAIN_TEXT" value="85" />
           <entry key="Python" value="4719" />
         </counts>
@@ -135,7 +134,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/Dnn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="865">
@@ -146,6 +145,18 @@
                 <marker date="1566351463786" expanded="true" signature="173:174" ph="..." />
                 <marker date="1566351463786" expanded="true" signature="900:902" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="450">
+                <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -217,7 +228,6 @@
         <option value="$PROJECT_DIR$/byzantine/helperfunction/__init__.py" />
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/__init__.py" />
         <option value="$PROJECT_DIR$/byzantine/models/ether.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Pipfile" />
         <option value="$PROJECT_DIR$/byzantine/__init__.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
@@ -231,6 +241,7 @@
         <option value="$PROJECT_DIR$/byzantine/data/投资指标+数据v3.csv" />
         <option value="$PROJECT_DIR$/byzantine/data/v3.csv" />
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/Dnn.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -280,12 +291,6 @@
               <item name="nlp_hub" type="b2602c69:ProjectViewProjectNode" />
               <item name="nlp_hub" type="462c0819:PsiDirectoryNode" />
               <item name="byzantine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nlp_hub" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nlp_hub" type="462c0819:PsiDirectoryNode" />
-              <item name="byzantine" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nlp_hub" type="b2602c69:ProjectViewProjectNode" />
@@ -506,7 +511,7 @@
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3453083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3453083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -521,7 +526,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005362" side_tool="true" weight="0.39943343" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4994638" weight="0.32747877" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.4997319" visible="true" weight="0.26912183" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4997319" visible="true" weight="0.26912183" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -661,16 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -904,6 +899,16 @@
             <marker date="1566351463786" expanded="true" signature="173:174" ph="..." />
             <marker date="1566351463786" expanded="true" signature="900:902" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="450">
+            <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

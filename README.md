@@ -3,10 +3,10 @@ working on nlp..
 ## Project structure
 * data : training data and testing data 
 * helpfunction: data preprocessing function
-* models: pretrained word-embedding model and neural network
+* models: pretrained word-embedding model and neural network 
 * HIEROPHANT
     * Dnn.py : stupid structured data classifier
-    * emerald.py: main entrance for Ner
+    * emerald.py: [main entrance for Ner](https://github.com/another1s/StoneFree/blob/master/byzantine/HIEROPHANT/emerald.py)
     * Ner.py: literally 
     * teee.py: test script
     * features_eng.py: for future feature engineering use

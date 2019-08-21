@@ -118,14 +118,14 @@
         <counts>
           <entry key="Pipfile" value="8" />
           <entry key="csv" value="10" />
-          <entry key="md" value="646" />
+          <entry key="md" value="695" />
           <entry key="py" value="4719" />
           <entry key="txt" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="646" />
+          <entry key="Markdown" value="695" />
           <entry key="PLAIN_TEXT" value="85" />
           <entry key="Python" value="4719" />
         </counts>
@@ -153,8 +153,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="450">
-                <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <first_editor relative-caret-position="225">
+                <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
               </first_editor>
               <second_editor />
             </state>
@@ -905,8 +905,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="450">
-            <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <first_editor relative-caret-position="225">
+            <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
           </first_editor>
           <second_editor />
         </state>

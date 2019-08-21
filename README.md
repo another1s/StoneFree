@@ -11,6 +11,10 @@ working on nlp..
     * teee.py: test script
     * features_eng.py: for future feature engineering use
 ## how to install
-git clone https://github.com/another1s/StoneFree.git
+clone project: git clone https://github.com/another1s/StoneFree.git 
+
+download fasttext pretrained: wget https://dl.fbaipublicfiles.com/fasttext/vectors-english/crawl-300d-2M-subword.zip. 
+can be replaced by any fasttext alternatives  
+
 ## Issues about deploying this project
 1. numpy version == 1.16.4 to avoid warning

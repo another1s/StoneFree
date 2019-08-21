@@ -15,6 +15,7 @@ if __name__ == '__main__':
                             training_data_address=config['train_addr'])
     # data_train = BatchGenerator(X=metadata.data, y=metadata.labels, shuffle=True)
     pad_character = ['konodioda', 'kakyoin']
+    metadata.word_embedding.trainables.workers = 4
     metadata.newly_imported.append(pad_character)
     for sentence in metadata.data:
         metadata.check_words(words=sentence)

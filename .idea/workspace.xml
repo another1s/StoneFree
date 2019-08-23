@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ee2df45-f01c-40ce-b8da-2937fddeeff0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py" beforeDir="false" afterPath="$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,11 +83,11 @@
     <session id="-2047025729">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
@@ -94,7 +95,7 @@
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,7 +104,7 @@
           <entry key="csv" value="3" />
           <entry key="lock" value="2" />
           <entry key="md" value="2" />
-          <entry key="py" value="52" />
+          <entry key="py" value="54" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
@@ -111,7 +112,7 @@
         <counts>
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="52" />
+          <entry key="Python" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -119,7 +120,7 @@
           <entry key="Pipfile" value="8" />
           <entry key="csv" value="10" />
           <entry key="md" value="842" />
-          <entry key="py" value="4719" />
+          <entry key="py" value="4792" />
           <entry key="txt" value="67" />
         </counts>
       </usages-collector>
@@ -127,7 +128,7 @@
         <counts>
           <entry key="Markdown" value="842" />
           <entry key="PLAIN_TEXT" value="85" />
-          <entry key="Python" value="4719" />
+          <entry key="Python" value="4792" />
         </counts>
       </usages-collector>
     </session>
@@ -137,8 +138,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/Dnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="865">
-              <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+            <state relative-caret-position="1710">
+              <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1566351463786" expanded="true" signature="105:158" ph="..." />
@@ -149,12 +150,39 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="68" column="68" lean-forward="true" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1566466181267" expanded="true" signature="2176:2182" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/text-classification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="710">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1566466181286" expanded="true" signature="54:996" ph="..." />
+                <marker date="1566466181286" expanded="true" signature="54:1001" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="855">
-                <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+              <first_editor relative-caret-position="720">
+                <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -164,7 +192,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1123178604/numpy/random/mtrand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
+            <state relative-caret-position="95895">
               <caret line="2135" column="4" selection-start-line="2135" selection-start-column="4" selection-end-line="2135" selection-end-column="4" />
             </state>
           </provider>
@@ -236,12 +264,13 @@
         <option value="$PROJECT_DIR$/byzantine/data/input_data/label.txt" />
         <option value="$PROJECT_DIR$/byzantine/helperfunction/embedding.py" />
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/teee.py" />
-        <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py" />
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/emerald.py" />
         <option value="$PROJECT_DIR$/byzantine/data/投资指标+数据v3.csv" />
         <option value="$PROJECT_DIR$/byzantine/data/v3.csv" />
         <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/Dnn.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/text-classification.py" />
+        <option value="$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py" />
       </list>
     </option>
   </component>
@@ -251,7 +280,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-14" />
     <option name="y" value="2" />
     <option name="width" value="3866" />
@@ -280,6 +309,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,7 +336,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,6 +372,9 @@
       <module name="btd" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/byzantine/HIEROPHANT" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -508,10 +540,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
+    <frame x="-14" y="2" width="3866" height="2072" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3453083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3509667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -526,7 +558,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005362" side_tool="true" weight="0.39943343" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4994638" weight="0.32747877" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4997319" visible="true" weight="0.26912183" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.4997319" visible="true" weight="0.2722063" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -615,13 +647,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/btd-fmD8u9Bw/Lib/site-packages/gensim/test/utils.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/btd-fmD8u9Bw/Lib/site-packages/smart_open/smart_open_lib.py" />
     <entry file="file://$PROJECT_DIR$/byzantine/helperfunction/__init__.py">
@@ -765,17 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3645">
-          <caret line="83" column="50" selection-start-line="83" selection-start-column="50" selection-end-line="83" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1565945422003" expanded="true" signature="2176:2182" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/nlp_hub-e6DyAQBD/Lib/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24165">
@@ -860,6 +874,13 @@
         <state relative-caret-position="-1350" />
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1123178604/numpy/random/mtrand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95895">
+          <caret line="2135" column="4" selection-start-line="2135" selection-start-column="4" selection-end-line="2135" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/features_eng.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -882,17 +903,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/-1123178604/numpy/random/mtrand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="2135" column="4" selection-start-line="2135" selection-start-column="4" selection-end-line="2135" selection-end-column="4" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="720">
+            <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/Dnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="865">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        <state relative-caret-position="1710">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1566351463786" expanded="true" signature="105:158" ph="..." />
@@ -902,13 +926,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="855">
-            <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/Ner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="68" column="68" lean-forward="true" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1566466181267" expanded="true" signature="2176:2182" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/byzantine/HIEROPHANT/text-classification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1566466181286" expanded="true" signature="54:996" ph="..." />
+            <marker date="1566466181286" expanded="true" signature="54:1001" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

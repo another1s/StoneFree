@@ -58,7 +58,7 @@ class BilstmNer:
     def label_padding(self, y):
         y = np.array(y)
         padding_num = self.sentence_len - y.shape[0]
-        if padding_num>0:
+        if padding_num > 0:
             dio_brando = np.ones(padding_num)*3
             label_padded = np.concatenate((y, dio_brando))
             return label_padded

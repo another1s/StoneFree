@@ -4,6 +4,16 @@ from gensim.test.utils import datapath
 import tensorflow as tf
 
 
+
+w = ['erere', 'weerr', 'aaaaa']
+
+Tokenlizer = tf.keras.preprocessing.text.Tokenizer()
+Tokenlizer.fit_on_texts(w)
+print(Tokenlizer.get_config())
+
+
+
+
 def halo(a, b):
     return a+1, b+1
 # a = np.array([2, 4, 5, 6])
